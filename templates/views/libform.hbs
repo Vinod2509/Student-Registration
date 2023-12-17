@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nith-semreg</title>
+    <link rel="stylesheet" href="/styles/libform.css">
+</head>
+<body>
+<div class="library-section">
+  <h2>Library Section</h2>
+  <div>
+  <label for="dob-year">Year</label>
+  <select id="year" name="year" >
+    <option value="2023">2023</option>
+    <option value="2022">2022</option>
+    <option value="2021">2021</option>
+    <!-- Add more options here if needed -->
+  </select>
+</div>
+  <p class="library-prompt">Do you have any library dues?</p>
+  <div class="buttons">
+    <button class="btn-yes" id="yes">Yes</button>
+    <button class="btn-no" id="no">No</button>
+  </div>
+  
+
+  <div id="upload-form" class="hidden">
+    <form id="documentForm" method="POST" enctype="multipart/form-data">
+
+  <label for="file">Upload File:</label>
+  <input type="file" id="file" name="file"><br>
+   <br>
+   
+  <input type="submit" value="Submit">
+  <br>
+  <br>
+</form>
+    {{!-- <form id="form" action="/lib" method="post" enctype="multipart/form-data">
+      <label class="upload-label" for="file">Upload File:</label>
+      <input type="file" id="file" name="file" multiple>
+      <ul id="files" class="file-list"></ul>
+      <button type="submit">submit</button>
+    </form> --}}
+  </div>
+  <div id="next-page" class="hidden">
+    <button id="next-page">next</button>
+  </div>
+</div>
+<script src="/js/libform.js"></script>
+<body>
+</html>

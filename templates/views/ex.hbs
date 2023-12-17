@@ -1,0 +1,21 @@
+<html>
+<script>
+function makePostCall() {
+fetch('/users',{
+method:'POST',
+headers:{
+'Content-Type': 'application/json'
+},
+body: JSON.stringify({"roll":"194151",
+    "email":"111manikkanta.v@gmail.com",
+    "password":"mani6016",
+    "role":"student"})
+})
+.then(res=>res.json())
+.then(data=>console.log(data));
+}
+</script>
+<body>
+<button onclick="makePostCall()">Submit</button>
+</body>
+</html>

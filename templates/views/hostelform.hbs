@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fee Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/styles/hostel.css">
+</head>
+<body>
+	<div class="container">
+		<h2>Fee Form</h2>
+		<form id="form" method="POST" enctype="multipart/form-data">
+			<label for="room-number">Room Number:</label>
+			<input type="text" id="room" name="room">
+
+			<label for="year">Year:</label>
+			<select id="year" name="year">
+			  <option value="-1">Year</option>
+			  <option value="2022">2022</option>
+			  <option value="2023">2023</option>
+			  <option value="2024">2024</option>
+			  <option value="2025">2025</option>
+			</select>
+
+			<label for="hostel-name">Hostel Name:</label>
+			<select id="hostel_name" name="hostel_name">
+			  <option value="Himadri">Himadri</option>
+			  <option value="Himagiri">Himagiri</option>
+			  <option value="Udaygiri">Udaygiri</option>
+			  <option value="DBH">DBH</option>
+			  <option value="Mani Mahesh">Mani Mahesh</option>
+			  <option value="Satpura">Satpura</option>
+			  <option value="VBH">VBH</option>
+			  <option value="KBH">KBH</option>
+			  <option value="AMBIKA">AMBIKA</option>
+			  <option value="SHIVALIK">SHIVALIK</option>
+			  <option value="PARVATI">PARVATI</option>
+			</select>
+
+			<label for="fee-file">Fee File:</label>
+			<input type="file" id="file" name="file">
+
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+	<script src="/js/hostel.js"></script>
+</body>
+</html>

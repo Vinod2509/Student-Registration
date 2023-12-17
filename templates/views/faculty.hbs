@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nith-semreg</title>
+    <link rel="stylesheet" href="/styles/index.css">
+
+</head>
+<body>
+   <nav>
+    
+           <img src="/img/nithlogo.png" class="img1" alt="logo">  
+          <h4>National Institute Of Technology,Hamirpur<br>(an institute of national importance)<h4>
+
+          
+          <ul>
+            
+              <li><a href="../src/templates/views/index.html">HOME</a></li>
+              <li><a href="https://nith.ac.in/nith-history">ABOUT</a></li>
+              
+              <li><a href="https://nith.ac.in/all-announcements">EVENTS</a></li>
+              <li><a href="https://nith.ac.in/photo-video-gallery">GALLERY</a></li>
+              <li><a href="https://nith.ac.in/central-facilities-and-cells">BLOG</a></li>
+           
+              <li><a href="https://nith.ac.in/contact-us">CONTACT</a></li>
+
+              <li><a href="http://localhost:80/courses">CREATE COURSES</a></li>
+          </ul>
+       </nav>
+<br><br>
+
+
+ 
+    
+ <form  id="myForm" action="/tasks"method="get" >
+<tr>
+  <td>Branch</td>
+  <td>
+  <select name="Branch" id="Branch">
+  <option value="-1">Branch:</option>
+  <option value="ece">ece</option>
+  <option value="cse">cse</option>
+  <option value="civil">civil</option>
+  <option value="mech">mech</option>
+  <option value="chem">chem</option>
+  <option value="material">material</option>
+  </select>
+  <select name="sem" id="sem">
+  <option value="-1">sem:</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  </select>
+
+
+
+ 
+  <select id="Degree" name="degree">
+  <option value="-1">Degree:</option>
+  <option value="Btech">B.Tech</option>
+  <option value="B.Arch">B.Arch</option>
+  <option value="Dual Degree">Dual Degree</option>
+  <option value="M.Tech">M.Tech</option>
+  <option value="Ph.D">Ph.D</option>
+  <option value="MBA">MBA</option>
+  <option value="MCA">MCA</option>
+  <option value="Msc">Msc</option>
+  </select>
+ 
+
+  <select id="year" id="year">
+        <option value="-1">Year:</option>
+			  <option value="2022">2022</option>
+			  <option value="2023">2023</option>
+			  <option value="2024">2024</option>
+			  <option value="2025">2025</option>
+			</select>
+  </td>
+</tr>
+
+<input type="submit" value="submit" >
+</form>
+
+<div class="filter-container" id="filter" >
+  <div class="filter">
+    <span class="filter-symbol">&#128269;</span>
+    <select id="filter-select">
+      <option value="">Filter</option>
+      <option value="accepted">Accepted</option>
+      <option value="rejected">Rejected</option>
+      <option value="notVisited">Not Visited</option>
+    </select>
+  </div>
+
+
+  <div class="sort" id="sort">
+    <span class="sort-symbol">&#8645;</span>
+    <select id="sort-select">
+      <option value="">Sort</option>
+      <option value="asc">Ascending</option>
+      <option value="desc">Descending</option>
+    </select>
+  </div>
+
+
+  <div class="limit" id="limit">
+    <label for="limit-input">Limit:</label>
+    <input type="number" id="limit-input" min="1" max="100">
+  </div>
+</div>
+
+<br><br>
+
+<table class="table" >
+
+  <thead>
+      <tr>
+        <td>S.no</td>
+        <td>Roll NO</td>
+        {{!-- <td>First Name</td>
+        <td>Last Name</td> --}}
+        <td>View</td>
+      
+      </tr>
+    </thead>
+
+    <tbody id="table">
+
+    </tbody>
+  
+</table>
+
+
+<script src="/js/faculty.js"></script>
+ 
+</body>
+</html>

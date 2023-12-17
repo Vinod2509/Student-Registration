@@ -1,0 +1,125 @@
+﻿{{!-- <!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Project</title>
+    <link rel="stylesheet" href="/styles/accountcreate.css">
+    
+  </head>
+  <body>
+    <div class="center">
+      <h1>Signup</h1>
+         
+       <form method="post">
+
+         <div class="txt_field">
+            <input id="roll-el" type="text" required>
+            <span></span>
+            <label>Roll Number</label>
+         </div>
+        <div class="txt_field">
+          <input id="email-el" type="text"required>
+          <span></span>
+          <label>Email</label>
+        </div>
+        
+        
+        <div class="txt_field">
+          <input id="fname" type="text" required>
+          <span></span>
+          <label>fname</label>
+        </div>
+
+
+
+        <div class="txt_field">
+          <input id="password-el" type="text" required>
+          <span></span>
+          <label>Password</label>
+        </div>
+         <div class="txt_field">
+          <input id="confirmPassword-el" type="text" required>
+          <span></span>
+          <label>Confirm Password</label>
+        </div>
+        <div class="signup_link">
+          <select class="signup_link" aria-label="Default select example">
+       
+           <option Selected value="1">Student</option>
+  
+           </select>
+        </div>
+       
+        <input id="submit-el" type="submit" value="Create">
+    
+      </form>
+         <script src="/js/accCreate.js"></script>
+      
+    </div>
+
+  </body>
+</html> --}}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Create User</title>
+    <link rel="stylesheet" href="/styles/accountcreate.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create User</h1>
+        <form id="user-form">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="dob">Date of Birth</label>
+            <input type="text" id="dob" name="dob" placeholder="MM/DD/YYYY" required>
+
+            <label for="mobileNumber">Mobile Number</label>
+            <input type="text" id="mobileNumber" name="mobileNumber" required>
+
+            <label for="gender">Gender</label>
+            <input type="text" id="gender" name="gender" required>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="pinCode">Pin Code</label>
+            <input type="text" id="pinCode" name="pinCode" required>
+
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="role">Role</label>
+            <input type="text" id="role" name="role" required>
+
+            <label for="roll">Roll</label>
+            <input type="text" id="roll" name="roll" required>
+
+            <button type="submit">Create User</button>
+        </form>
+
+        <button id="send-otp">Send OTP</button>
+    </div>
+
+    <script src="/js/accCreate.js"></script>
+</body>
+</html>

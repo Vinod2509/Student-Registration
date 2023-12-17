@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Document</title>
+  
+    <link rel="stylesheet" type="text/css" href="/styles/sr.css">
+</head>
+<body>
+  <h1>Create Document</h1>
+  <form id="documentForm" enctype="multipart/form-data">
+    <label for="rollNo">Roll No:</label>
+    <input type="text" id="rollNo" required>
+    <br>
+
+    <tr>
+       <td>
+  {{!-- <label for="branch">Branch</label> --}}
+      <select name="Branch" id="branch">
+      <option value="-1">Branch:</option>
+      <option value="ece">ece</option>
+      <option value="cse">cse</option>
+      <option value="civil">civil</option>
+      <option value="mech">mech</option>
+      <option value="chem">chem</option>
+      <option value="material">material</option>
+       </select>
+    
+   
+     {{!-- <label for="sem">Semester:</label> --}}
+        <select name="sem" id="sem">
+        <option value="-1">sem:</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        </select>
+        
+    {{!-- <label for="degree">Degree:</label> --}}
+   
+    <select id="degree" name="degree">
+      <option value="-1">Degree</option>
+    <option value="Btech">B.Tech</option>
+    <option value="B.Arch">B.Arch</option>
+    <option value="Dual Degree">Dual Degree</option>
+    <option value="M.Tech">M.Tech</option>
+    <option value="Ph.D">Ph.D</option>
+    <option value="MBA">MBA</option>
+    <option value="MCA">MCA</option>
+    <option value="Msc">Msc</option>
+     </select>
+    
+    {{!-- <label for="year">Year</label> --}}
+			<select id="year" name="year">
+        <option value="-1">Year:</option>
+			  <option value="2022">2022</option>
+			  <option value="2023">2023</option>
+			  <option value="2024">2024</option>
+			  <option value="2025">2025</option>
+			</select>
+      
+    {{!-- <label for="presem">Previous sem:</label> --}}
+        <select id="presem" name="presem">
+        <option value="-1">Pre_sem</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+
+        </select></td>
+
+        </tr>
+     
+    <br>
+    <label for="sgpi">SGPI:</label>
+    <input type="number" step="any" id="sgpi" min="0" max="10" required>
+    <br>
+    <label for="cgpi">CGPI:</label>
+    <input type="number" step="any" id="cgpi" min="0" max="10" required>
+    <br>
+    <label for="files">Files:</label>
+    <input type="file" id="files" multiple>
+    <br>
+    <label for="bcourses">Courses with F Grade</label>
+    <div id="coursesContainer">
+      {{!-- <input type="text" class="cccode" placeholder="Course Code">
+      <input type="text" class="cname" placeholder="Course Name"> --}}
+      
+    </div>
+    <button type="button" id="addCourse">Add Course</button>
+    <br>
+    {{!-- <label for="remarks">Remarks:</label>
+    <input type="text" id="remarks">
+    <br>
+    <label for="completed">Completed:</label>
+    <input type="checkbox" id="completed">
+    <br> --}}
+    <br>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+  <script src="/js/sr.js"></script>
+  </body>
+  
+
+  

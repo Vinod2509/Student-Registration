@@ -1,0 +1,385 @@
+/* The modal (background) */
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9fb;
+    padding: 20px;
+    border-radius: 5px;
+    max-height: 80%; /* Set a max-height to allow scrolling */
+    overflow-y: auto; /* Enable scrolling */
+}
+  
+  /* Close Button */
+  .close {
+    color: #ed1212;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /*modal in faculty page */
+
+  h3{
+  font-family: Calibri; 
+  font-size: 25pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:SlateBlue;
+  text-align: center; 
+  text-decoration: underline
+}
+
+table{
+  font-family: Calibri; 
+  color:black; 
+  font-size: 11pt; 
+  font-style: normal;
+  font-weight: bold;
+  
+  background-color: whitesmoke; 
+  border-collapse: collapse; 
+  border: 2px solid navy
+}
+table.inner{
+  border: 0px
+}
+/* accept ,reject button colours */
+.accept-btn {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .accept-btn:hover {
+    background-color: darkgreen;
+  }
+  
+  .reject-btn {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .reject-btn:hover {
+    background-color: darkred;
+  }
+  /* limit,sort,filter */
+  #filter-section,
+#sort-section,
+#limit-section {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+  .filter-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .filter, .sort, .limit {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  
+  .filter-symbol, .sort-symbol {
+    font-size: 1.5rem;
+    margin-right: 5px;
+  }
+  
+  #filter-select, #sort-select, #limit-input {
+    margin-left: 5px;
+  }
+  
+  #limit-input {
+    width: 50px;
+  }
+  
+  
+  
+
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing : border-box;
+}
+
+
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    
+                height: 700px;
+                width: 1500px;
+                background: 
+            url("/img/adminblocknith.png");
+                  
+                /* Set the background-size in percentage */
+               
+                background-repeat: no-repeat; 
+            
+}
+
+nav{
+    display: flex;
+   
+    min-height: 8hv;
+    margin: auto;
+    width: 100%;
+    
+    background-color: 	#B22222;
+   
+}
+nav h4{
+    color : White;
+     padding: 1%;
+    align-items: flex-start;
+    letter-spacing : 0px;
+    font-size: 15px;
+}
+nav ul{
+    float: right;
+     padding: 1%;
+    align-items: flex-end;
+    margin: 0;
+    margin-right: 0%;
+}
+
+nav ul li{
+    list-style-type: none;
+     padding: 1%;
+    align-items: flex-end;
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    align-items: flex-end;
+    color: #fff;
+    padding: 0px;
+}
+ .img1 {
+    width: 5%;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+img{
+    width: 14%;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+
+nav ul li:hover{
+    background-color: coral;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.section{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  
+}
+.section h1{
+  text-align: center;
+  
+  
+}
+
+.btn-1{
+    position: absolute;
+  top: 90%;
+  left: 50%;
+    background-color: #B22222;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+}
+
+.btn-2{
+    position: absolute;
+  top: 90%;
+  left: 50%;
+    background-color: #223fb2;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+}
+
+.features{
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.features button{
+    padding: 0.7rem 2rem;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+showcase h1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+#courses{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#courses img{
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    margin: auto;
+}
+
+.apply{
+    margin-top: 4%;
+    background-color: #B22222;
+    padding: 0.7rem 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 4%;
+}
+a{
+    color: #11999e;
+    font-family: 'Montserrat',sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+
+}
+a:hover{
+    color:#eaf6f6
+}
+ .c{
+      background-color: orangered;
+      padding: 50px 0 20px 0;
+  }
+  
+
+  .table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.table th:first-child, 
+.table td:first-child {
+    padding-left: 16px;
+}
+
+
+.table td, 
+.table th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+}
+
+.table th {
+    font-weight: bold;
+}
+ 
+.table {
+    font-size: 13px!important;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+}
+
+
+
+/*.........*/
+
+/*THE END*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
